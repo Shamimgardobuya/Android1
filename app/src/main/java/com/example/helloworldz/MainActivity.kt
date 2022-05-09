@@ -8,6 +8,7 @@ import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
     lateinit var btncalculate:Button
+    lateinit var btnSendMoney:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-          lateinit var btnSendMoney: Button
+
           btnSendMoney=findViewById(R.id.btnSendMoney)
           btnSendMoney.setOnClickListener {
             val intent =Intent(this,SendMoney::class.java)
